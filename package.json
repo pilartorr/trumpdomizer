@@ -1,0 +1,18 @@
+{
+  "name": "trumpdomizer",
+  "version": "1.0.0",
+  "description": "Get a random number",
+  "main": "index.js",
+  "engines": {
+    "node": "8.5.0",
+    "npm": "6.13.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Vigo Torres",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

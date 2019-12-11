@@ -2,35 +2,158 @@
 .App {
   text-align: center;
   min-height: 100vh;
+  padding: 10px;
 }
 .App-name {
-  margin-top: 7vh;
+  margin-top: 5vh;
+  font-size: 2.35rem !important;
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 270px;
-  margin: 75px;
-  z-index: 10000;
+  height: 150px;
+  margin: 38px;
 }
 .App-click-text {
   color: #ff207a;
 }
 .App-numbers-container {
-  width: 50vw;
-  margin: 50px;
+  margin: 30px;
+  padding-left: 10px;
+}
+.col-3 {
+  flex: 0 0 30% !important;
+  max-width: 30% !important;
 }
 .App-number-div {
-  width: 100px;
-  height: 100px;
-  border: 1px solid blue;
-  margin-right: 5px;
+  font-size: 10px;
+  height: 84px;
+  padding-top: 28px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.App-number-div:last-child,
+.App-number-div:nth-child(3n),
+.App-number-div:nth-child(6n){
+  margin-right: 0;
 }
 .App-description {
-  width: 60vw;
   font-size: 12px;
+  width: 86%;
+  text-align: justify;
+}
+.App-copyRight {
+  font-size: 12px;
+  margin: 30px auto 15px;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media only screen and (min-width: 768px) {
+  .App-name {
+    font-size: 4.5rem !important;
+    margin-top: 5vh;
+  }
+  .App-subtitle {
+    font-size: 2.25rem !important;
+  }
+  .App-logo {
+    height: 261px;
+    margin: 68px;
+  }
+  .App-click-text {
+    font-size: 2rem !important;
+  }
+  .col-3 {
+    flex: 0 0 32% !important;
+    max-width: 32% !important;
+  }
+  .App-number-div {
+    font-size: 24px !important;
+    margin-right: 10px;
+    height: 100px;
+    padding-top: 32px;
+  }
+  .App-description {
+    width: 89%;
+    font-size: 17px;
+  }
+  .App-copyRight {
+    font-size: 17px;
+    margin: 40px auto 20px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .App-name {
+    font-size: 8.5rem !important;
+  }
+  .App-subtitle {
+    font-size: 4rem !important;
+  }
+  .App-logo {
+    height: 444px;
+    margin: 127px;
+  }
+  .App-click-text {
+    font-size: 3rem !important;
+  }
+  .App-numbers-container {
+    margin: 60px;
+    padding-left: 10px;
+  }
+  .col-3 {
+    flex: 0 0 32.5% !important;
+    max-width: 32.5% !important;
+  }
+  .App-number-div {
+    font-size: 35px !important;
+    padding-top: 28px;
+  }
+  .App-description {
+    width: 63%;
+    font-size: 27px;
+  }
+  .App-copyRight {
+    font-size: 27px;
+    margin: 60px auto 30px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .App-name {
+    font-size: 4.5rem !important;
+    margin-top: 5vh;
+  }
+  .App-subtitle {
+    font-size: 2.25rem !important;
+  }
+  .App-logo {
+    height: 261px;
+    margin: 68px;
+  }
+  .App-click-text {
+    font-size: 2rem !important;
+  }
+  .App-numbers-container {
+    width: 65%;
+  }
+  .col-3 {
+    flex: 0 0 32% !important;
+    max-width: 32% !important;
+  }
+  .App-number-div {
+    font-size: 24px !important;
+    margin-right: 10px;
+    height: 100px;
+    padding-top: 32px;
+  }
+  .App-description {
+    width: 60%;
+    font-size: 17px;
+  }
+  .App-copyRight {
+    font-size: 17px;
+    margin: 40px auto 20px;
+  }
 }

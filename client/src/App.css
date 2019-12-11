@@ -20,10 +20,7 @@
   margin: 30px;
   padding-left: 10px;
 }
-.col-3 {
-  flex: 0 0 30% !important;
-  max-width: 30% !important;
-}
+
 .App-number-div {
   font-size: 10px;
   height: 84px;
@@ -31,11 +28,7 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
-.App-number-div:last-child,
-.App-number-div:nth-child(3n),
-.App-number-div:nth-child(6n){
-  margin-right: 0;
-}
+
 .App-description {
   font-size: 12px;
   width: 86%;
@@ -66,16 +59,24 @@
   .App-click-text {
     font-size: 2rem !important;
   }
-  .col-3 {
-    flex: 0 0 32% !important;
-    max-width: 32% !important;
-  }
+
   .App-number-div {
     font-size: 24px !important;
     margin-right: 10px;
     height: 100px;
     padding-top: 32px;
   }
+
+  .App-number-div:nth-child(5n) {
+    margin-right: 40px;
+  }
+
+  .App-number-div:nth-child(5n)::after {
+    content: "+";
+    position: relative;
+    left: 53px;
+  }
+
   .App-description {
     width: 89%;
     font-size: 17px;
@@ -87,14 +88,17 @@
 }
 @media only screen and (min-width: 960px) {
   .App-name {
-    font-size: 8.5rem !important;
+    font-size: 6rem !important;
+    margin-top: 5vh;
   }
+
   .App-subtitle {
-    font-size: 4rem !important;
+    font-size: 3rem !important;
   }
+
   .App-logo {
-    height: 444px;
-    margin: 127px;
+    height: 322px;
+    margin: 88px;
   }
   .App-click-text {
     font-size: 3rem !important;
@@ -103,16 +107,18 @@
     margin: 60px;
     padding-left: 10px;
   }
-  .col-3 {
-    flex: 0 0 32.5% !important;
-    max-width: 32.5% !important;
-  }
+
   .App-number-div {
     font-size: 35px !important;
     padding-top: 28px;
   }
+
+  .App-number-div:nth-child(5n)::after {
+    left: 67px;
+  }
+
   .App-description {
-    width: 63%;
+    width: 90%;
     font-size: 27px;
   }
   .App-copyRight {
@@ -120,7 +126,7 @@
     margin: 60px auto 30px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1200px) {
   .App-name {
     font-size: 4.5rem !important;
     margin-top: 5vh;
@@ -138,16 +144,18 @@
   .App-numbers-container {
     width: 65%;
   }
-  .col-3 {
-    flex: 0 0 32% !important;
-    max-width: 32% !important;
-  }
+
   .App-number-div {
     font-size: 24px !important;
     margin-right: 10px;
     height: 100px;
     padding-top: 32px;
   }
+
+  .App-number-div:nth-child(5n)::after {
+    left: 56px;
+  }
+
   .App-description {
     width: 60%;
     font-size: 17px;

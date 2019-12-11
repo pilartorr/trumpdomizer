@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      amount: 6,
+      amount: 7,
       randoms: []
     };
 
@@ -33,7 +33,7 @@ class App extends Component {
   render() {
     const randoms = this.state.randoms.map((random, i) => {
         return (
-        <div key={i} className="App-number-div col-3 col-lg border border-info lead">
+        <div key={i} className="App-number-div col border border-info lead">
             {random}
         </div>
         )

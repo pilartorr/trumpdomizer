@@ -50,6 +50,14 @@ class App extends Component {
             {randoms}
           </div>
         </div>
+        <a className="App-link text-decoration-none" href="#">
+          <span className="App-link-arrow">
+            <span></span>
+            <span></span>
+          </span>
+          <span className="App-link-line"></span>
+          <span className="App-link-text">read more</span>
+        </a>
         <p className="App-description mx-auto">lottery random numbers extracted from tweets containing the endpoint "trump".
            This study is inspire, among other things, in the project random.org from
            Dr Mads Haahr of the School of Computer Science and Statistics,

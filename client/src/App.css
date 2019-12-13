@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 .App {
   text-align: center;
   min-height: 100vh;
@@ -28,6 +28,115 @@
   margin-right: 10px;
   margin-bottom: 10px;
 }
+
+/* LINK ANIMATION */
+.App-link {
+  position: absolute;
+  bottom: 25%;
+  left: -11px;
+  transform: rotate(-90deg);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  color: #17a2b8;
+}
+.App-link-arrow {
+  display: inline-flex;
+}
+
+.App-link-arrow span {
+  position: relative;
+  width: 14px;
+  height: 2px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: #BEBDBE;
+  z-index: 2;
+}
+
+.App-link-arrow span:nth-child(1) {
+  transform-origin: left bottom;
+  transform: rotate(45deg) translate3d(8px, -10px, 0);
+}
+
+.App-link-arrow span:nth-child(2) {
+  transform-origin: left bottom;
+  transform: rotate(-45deg);
+}
+
+.App-link-arrow span:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #17a2b8;
+}
+
+.App-link-line {
+  position: relative;
+  margin-left: -14px;
+  margin-right: 30px;
+  width: 150px;
+  height: 2px;
+  background: #BEBDBE;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.App-link-line:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 80px;
+  width: 70px;
+  height: 2px;
+  background: #17a2b8;
+}
+
+.App-link-text {
+  font-family: 'Oswald', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.App-link-text:hover {
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+.App-link-line::after {
+  animation: animation-line 1.5s forwards;
+}
+
+.App-link-arrow span:after {
+  animation: animation-arrow 1.5s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes animation-line {
+  0% {
+    left: 80px;
+  }
+
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes animation-arrow {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* END LINK ANIMATION*/
 
 .App-description {
   font-size: 12px;
@@ -60,6 +169,10 @@
     font-size: 2rem !important;
   }
 
+  .App-numbers-container {
+    width: 80%;
+  }
+
   .App-number-div {
     font-size: 24px !important;
     margin-right: 10px;
@@ -78,8 +191,12 @@
   }
 
   .App-description {
-    width: 89%;
+    width: 72%;
     font-size: 17px;
+  }
+  .App-link {
+    bottom: 37%;
+    left: -10%;
   }
   .App-copyRight {
     font-size: 17px;
@@ -106,6 +223,7 @@
   .App-numbers-container {
     margin: 60px;
     padding-left: 10px;
+    width: 80%;
   }
 
   .App-number-div {
@@ -118,8 +236,11 @@
   }
 
   .App-description {
-    width: 90%;
+    width: 71%;
     font-size: 27px;
+  }
+  .App-link {
+    left: -6%;
   }
   .App-copyRight {
     font-size: 27px;
